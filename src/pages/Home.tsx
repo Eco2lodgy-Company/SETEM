@@ -2,26 +2,30 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Building2, CheckCircle2, Lightbulb, Shield } from 'lucide-react';
+import LatestProjects from '@/components/home/LatestProjects';
+import Partners from '@/components/home/Partners';
+import Testimonials from '@/components/home/Testimonials';
 
 const Home = () => {
   return (
     <main>
-      {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[500px] bg-gradient-to-r from-getec-950 to-getec-800 flex items-center">
+      {/* Hero Section - Agrandie */}
+      <section className="relative h-[90vh] min-h-[600px] bg-gradient-to-r from-getec-950 to-getec-800 flex items-center">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1487958449943-2429e8be8625')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Expertise en ingénierie et contrôle technique
+            <span className="inline-block px-4 py-2 bg-getec-500/20 text-getec-100 rounded-full text-sm font-medium mb-6">Bureau d'études techniques & contrôle</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              L'excellence en ingénierie depuis 2006
             </h1>
-            <p className="text-xl text-getec-100 mb-8">
-              GETEC OI, votre partenaire à La Réunion pour vos projets de construction, d'infrastructure et de génie civil depuis 2006.
+            <p className="text-xl text-getec-100 mb-10 leading-relaxed">
+              SETEM, votre partenaire à La Réunion pour vos projets de construction, d'infrastructure et de génie civil.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-getec-500 hover:bg-getec-600">
+              <Button asChild size="lg" className="bg-getec-500 hover:bg-getec-600 text-lg px-8">
                 <Link to="/services">Découvrir nos services</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg px-8">
                 <Link to="/contact">Nous contacter</Link>
               </Button>
             </div>
@@ -35,7 +39,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-getec-900 mb-4">Nos domaines d'expertise</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              GETEC OI vous accompagne dans tous vos projets de construction et d'infrastructure avec une équipe expérimentée et pluridisciplinaire.
+              SETEM vous accompagne dans tous vos projets de construction et d'infrastructure avec une équipe expérimentée et pluridisciplinaire.
             </p>
           </div>
           
@@ -79,14 +83,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Derniers Projets - Nouvelle section */}
+      <LatestProjects />
+
+      {/* Partenaires - Nouvelle section */}
+      <Partners />
+
+      {/* Témoignages - Nouvelle section */}
+      <Testimonials />
+
       {/* About Preview */}
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-getec-900 mb-6">À propos de GETEC OI</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-getec-900 mb-6">À propos de SETEM</h2>
               <p className="text-gray-600 mb-4">
-                Fondée en 2006, GETEC OI est une SARL spécialisée dans l'ingénierie, le bâtiment, les ouvrages d'art et le génie civil à La Réunion.
+                Fondée en 2006, SETEM est une SARL spécialisée dans l'ingénierie, le bâtiment, les ouvrages d'art et le génie civil à La Réunion.
               </p>
               <p className="text-gray-600 mb-6">
                 Notre équipe de 9 professionnels qualifiés met son expertise au service de vos projets, avec un engagement constant pour la qualité et la sécurité.
@@ -107,7 +120,7 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt à concrétiser votre projet ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contactez-nous dès aujourd'hui pour discuter de vos besoins et découvrir comment GETEC OI peut vous accompagner.
+            Contactez-nous dès aujourd'hui pour discuter de vos besoins et découvrir comment SETEM peut vous accompagner.
           </p>
           <Button asChild size="lg" className="bg-white text-getec-800 hover:bg-gray-100">
             <Link to="/contact">Demander un devis</Link>
