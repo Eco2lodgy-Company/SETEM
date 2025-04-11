@@ -73,7 +73,7 @@ const Home = () => {
       image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
       badge: "Projets sur mesure",
       stats: "100+ projets réalisés",
-      primaryButton: { text: "Voir nos projets", path: "/projets" },
+      primaryButton: { text: "Voir nos projets", path: "/" },
       secondaryButton: { text: "Demander un devis", path: "/contact" },
     },
     {
