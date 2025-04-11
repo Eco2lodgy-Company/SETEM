@@ -87,13 +87,13 @@ const Header = () => {
         {/* Desktop actions */}
         <div className="hidden md:flex items-center gap-4">
           {/* Search button */}
-          <button
+          {/* <button
             onClick={toggleSearch}
             className="p-2 rounded-full hover:bg-muted focus:outline-none focus:ring-2 focus:ring-SETM-800"
             aria-label={isSearchOpen ? 'Fermer la recherche' : 'Ouvrir la recherche'}
           >
             <Search className="h-5 w-5 text-muted-foreground" />
-          </button>
+          </button> */}
 
           {/* Contact button */}
           <Button
