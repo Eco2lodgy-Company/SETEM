@@ -178,7 +178,7 @@ const Home = () => {
                       asChild
                       size="lg"
                       variant="outline"
-                      className="text-white border-white hover:bg-white/20 rounded-full px-8 py-3 font-semibold transform transition-all hover:scale-105"
+                      className="text-SETM-500 border-SETM-500 hover:bg-SETM-500/20 rounded-full px-8 py-3 font-semibold transform transition-all hover:scale-105"
                     >
                       <Link to={slide.secondaryButton.path}>{slide.secondaryButton.text}</Link>
                     </Button>
