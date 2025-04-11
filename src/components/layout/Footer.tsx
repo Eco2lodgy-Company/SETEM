@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Liens rapides</h3>
             <ul className="space-y-2">
-              <li>
+              <li> 
                 <Link to="/" className="text-gray-300 hover:text-white transition-colors">
                   Accueil
                 </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-SETM-300 flex-shrink-0" />
-                <p className="text-gray-300">02 62 42 41 82</p>
+                <p className="text-gray-300">00 00 00 00</p>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-SETM-300 flex-shrink-0" />
