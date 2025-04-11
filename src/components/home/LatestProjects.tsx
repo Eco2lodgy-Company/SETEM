@@ -52,9 +52,9 @@ const LatestProjects = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-getec-900 mb-4">Nos derniers projets</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-SETM-900 mb-4">Nos derniers projets</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Découvrez quelques-uns des projets récents sur lesquels SETEM a eu l'opportunité de travailler
+            Découvrez quelques-uns des projets récents sur lesquels SETM a eu l'opportunité de travailler
           </p>
         </div>
 
@@ -70,7 +70,7 @@ const LatestProjects = () => {
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                     <div className="absolute top-3 right-3">
-                      <Badge className="bg-getec-700 hover:bg-getec-800">{project.category}</Badge>
+                      <Badge className="bg-SETM-700 hover:bg-SETM-800">{project.category}</Badge>
                     </div>
                   </div>
                   <CardHeader>
@@ -98,7 +98,7 @@ const LatestProjects = () => {
         </Carousel>
         
         <div className="text-center mt-10">
-          <Button asChild className="bg-getec-700 hover:bg-getec-800">
+          <Button asChild className="bg-SETM-700 hover:bg-SETM-800">
             <Link to="/services">Voir tous nos projets</Link>
           </Button>
         </div>

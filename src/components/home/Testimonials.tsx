@@ -15,7 +15,7 @@ const testimonials = [
     id: 1,
     name: "Marie Dupont",
     role: "Directrice de projet, Région Réunion",
-    content: "SETEM a été d'une aide précieuse pour notre projet d'extension du lycée. Leur expertise technique et leur professionnalisme ont permis de résoudre des problèmes complexes tout en respectant notre calendrier serré.",
+    content: "SETM a été d'une aide précieuse pour notre projet d'extension du lycée. Leur expertise technique et leur professionnalisme ont permis de résoudre des problèmes complexes tout en respectant notre calendrier serré.",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
     rating: 5,
   },
@@ -23,7 +23,7 @@ const testimonials = [
     id: 2,
     name: "Thomas Rivière",
     role: "Architecte, Cabinet AR+",
-    content: "Nous collaborons avec SETEM depuis plus de 5 ans sur différents projets. Leur équipe est réactive, compétente et propose toujours des solutions innovantes adaptées à nos contraintes architecturales.",
+    content: "Nous collaborons avec SETM depuis plus de 5 ans sur différents projets. Leur équipe est réactive, compétente et propose toujours des solutions innovantes adaptées à nos contraintes architecturales.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     rating: 5,
   },
@@ -31,7 +31,7 @@ const testimonials = [
     id: 3,
     name: "Laurent Payet",
     role: "Responsable technique, SIDR",
-    content: "Le contrôle technique effectué par SETEM sur notre projet de logements sociaux a été exemplaire. Leur rigueur et leur approche méthodique nous ont permis d'obtenir toutes les certifications nécessaires sans délai.",
+    content: "Le contrôle technique effectué par SETM sur notre projet de logements sociaux a été exemplaire. Leur rigueur et leur approche méthodique nous ont permis d'obtenir toutes les certifications nécessaires sans délai.",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
     rating: 4,
   }
@@ -42,7 +42,7 @@ const Testimonials = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-getec-900 mb-4">Ce que disent nos clients</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-SETM-900 mb-4">Ce que disent nos clients</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             La satisfaction de nos clients est notre priorité absolue
           </p>

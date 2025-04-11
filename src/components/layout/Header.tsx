@@ -28,7 +28,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-getec-800">SETEM</span>
+            <span className="text-2xl font-bold text-SETM-800">SETM</span>
           </Link>
         </div>
 
@@ -38,14 +38,14 @@ const Header = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm font-medium transition-colors hover:text-getec-700 ${
-                location.pathname === item.path ? 'text-getec-800 font-semibold' : 'text-muted-foreground'
+              className={`text-sm font-medium transition-colors hover:text-SETM-700 ${
+                location.pathname === item.path ? 'text-SETM-800 font-semibold' : 'text-muted-foreground'
               }`}
             >
               {item.name}
             </Link>
           ))}
-          <Button asChild className="ml-2 bg-getec-800 hover:bg-getec-700">
+          <Button asChild className="ml-2 bg-SETM-800 hover:bg-SETM-700">
             <Link to="/contact">Nous contacter</Link>
           </Button>
         </nav>
@@ -70,13 +70,13 @@ const Header = () => {
                 to={item.path}
                 onClick={closeMenu}
                 className={`px-4 py-3 text-base font-medium rounded-md transition-colors hover:bg-muted ${
-                  location.pathname === item.path ? 'bg-muted text-getec-800 font-semibold' : 'text-foreground'
+                  location.pathname === item.path ? 'bg-muted text-SETM-800 font-semibold' : 'text-foreground'
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="mt-2 bg-getec-800 hover:bg-getec-700">
+            <Button asChild className="mt-2 bg-SETM-800 hover:bg-SETM-700">
               <Link to="/contact" onClick={closeMenu}>Nous contacter</Link>
             </Button>
           </div>

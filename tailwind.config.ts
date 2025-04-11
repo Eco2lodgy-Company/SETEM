@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				getec: {
+				SETM: {
 					50: '#f0f7ff',
 					100: '#dceeff',
 					200: '#b9ddff',

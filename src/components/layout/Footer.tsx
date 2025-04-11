@@ -4,11 +4,11 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-getec-900 text-white">
+    <footer className="bg-SETM-900 text-white">
       <div className="container py-12 px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">GETEC OI</h3>
+            <h3 className="text-xl font-semibold mb-4">SETM OI</h3>
             <p className="text-gray-300 mb-4">
               Groupe d'Études Techniques et de Contrôle Océan Indien, votre partenaire en ingénierie,
               bâtiment, ouvrages d'art et génie civil depuis 2006.
@@ -48,20 +48,20 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-getec-300 flex-shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 mr-3 text-SETM-300 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-300">
                   6 ter rue Victor Mac Auliffe<br />
                   97420 LE PORT
                 </p>
               </div>
               <div className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-getec-300 flex-shrink-0" />
+                <Phone className="h-5 w-5 mr-3 text-SETM-300 flex-shrink-0" />
                 <p className="text-gray-300">02 62 42 41 82</p>
               </div>
               <div className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-getec-300 flex-shrink-0" />
-                <a href="mailto:getec@wanadoo.fr" className="text-gray-300 hover:text-white transition-colors">
-                  getec@wanadoo.fr
+                <Mail className="h-5 w-5 mr-3 text-SETM-300 flex-shrink-0" />
+                <a href="mailto:SETM@wanadoo.fr" className="text-gray-300 hover:text-white transition-colors">
+                  SETM@wanadoo.fr
                 </a>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} GETEC OI. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} SETM OI. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

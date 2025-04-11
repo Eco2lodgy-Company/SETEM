@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-getec-900 mb-6">Nos coordonnées</h2>
+              <h2 className="text-3xl font-bold text-SETM-900 mb-6">Nos coordonnées</h2>
               <p className="text-gray-700 mb-8">
                 N'hésitez pas à nous contacter par téléphone, email ou en nous rendant visite à notre siège social.
                 Notre équipe sera ravie de vous accueillir et de discuter de vos projets.
@@ -71,7 +71,7 @@ const Contact = () => {
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-getec-700 mr-4 flex-shrink-0 mt-1" />
+                  <MapPin className="h-6 w-6 text-SETM-700 mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Adresse</h3>
                     <p className="text-gray-700">
@@ -82,7 +82,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-getec-700 mr-4 flex-shrink-0 mt-1" />
+                  <Phone className="h-6 w-6 text-SETM-700 mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
                     <p className="text-gray-700">02 62 42 41 82</p>
@@ -90,11 +90,11 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <Mail className="h-6 w-6 text-getec-700 mr-4 flex-shrink-0 mt-1" />
+                  <Mail className="h-6 w-6 text-SETM-700 mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <a href="mailto:getec@wanadoo.fr" className="text-getec-700 hover:text-getec-800 transition-colors">
-                      getec@wanadoo.fr
+                    <a href="mailto:SETM@wanadoo.fr" className="text-SETM-700 hover:text-SETM-800 transition-colors">
+                      SETM@wanadoo.fr
                     </a>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-getec-900 mb-6">Envoyez-nous un message</h2>
+              <h2 className="text-3xl font-bold text-SETM-900 mb-6">Envoyez-nous un message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -191,7 +191,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-2 text-sm text-gray-600">
-                  <AlertCircle className="h-5 w-5 text-getec-700 flex-shrink-0 mt-0.5" />
+                  <AlertCircle className="h-5 w-5 text-SETM-700 flex-shrink-0 mt-0.5" />
                   <p>
                     En soumettant ce formulaire, vous acceptez que les informations saisies soient utilisées
                     pour vous recontacter dans le cadre de votre demande.
@@ -200,7 +200,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-getec-800 hover:bg-getec-700"
+                  className="w-full bg-SETM-800 hover:bg-SETM-700"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
@@ -222,7 +222,7 @@ const Contact = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Carte GETEC OI"
+            title="Carte SETM OI"
           ></iframe>
         </div>
       </section>

@@ -55,20 +55,20 @@
   }
 
   .page-header {
-    @apply relative py-24 px-4 bg-getec-900 text-white;
+    @apply relative py-24 px-4 bg-SETM-900 text-white;
   }
 
   .page-header::after {
     content: "";
-    @apply absolute inset-0 bg-getec-900 bg-opacity-70 z-0;
+    @apply absolute inset-0 bg-SETM-900 bg-opacity-70 z-0;
   }
 
   .page-header > * {
     @apply relative z-10;
   }
 
-  .getec-gradient {
-    @apply bg-gradient-to-r from-getec-800 to-getec-600;
+  .SETM-gradient {
+    @apply bg-gradient-to-r from-SETM-800 to-SETM-600;
   }
 
   .blur-background {
