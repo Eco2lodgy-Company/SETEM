@@ -83,9 +83,11 @@ const LatestProjects = () => {
                     <p className="text-gray-600">{project.description}</p>
                   </CardContent>
                   <CardFooter>
-                    <Button variant="outline" size="sm" className="ml-auto">
-                      En savoir plus
-                    </Button>
+                  <Link to="/projet" className="ml-auto">
+  <Button variant="outline" size="sm">
+    En savoir plus
+  </Button>
+</Link>
                   </CardFooter>
                 </Card>
               </CarouselItem>
@@ -97,11 +99,11 @@ const LatestProjects = () => {
           </div>
         </Carousel>
         
-        <div className="text-center mt-10">
+        {/* <div className="text-center mt-10">
           <Button asChild className="bg-SETM-700 hover:bg-SETM-800">
             <Link to="/services">Voir tous nos projets</Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

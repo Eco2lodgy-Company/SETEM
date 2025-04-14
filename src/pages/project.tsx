@@ -18,7 +18,7 @@ const slickStyles = `
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
   .slick-prev:hover, .slick-next:hover {
-    background: #SETM-700;
+    background: #0055A4; // Utilisation du bleu principal au survol
     transform: scale(1.1);
   }
   .slick-prev:before, .slick-next:before {
@@ -31,16 +31,16 @@ const slickStyles = `
   .slick-next {
     right: 30px;
   }
-  . slick-dots {
+  .slick-dots {
     bottom: 20px;
   }
   .slick-dots li button:before {
     font-size: 14px;
-    color: #SETM-100;
+    color: #E6F0FA; // Utilisation du bleu clair pour les points inactifs
     opacity: 0.6;
   }
   .slick-dots li.slick-active button:before {
-    color: #SETM-100;
+    color: #E6F0FA; // Utilisation du bleu clair pour les points actifs
     opacity: 1;
   }
 `;
@@ -49,11 +49,11 @@ const ProjectDetails = () => {
   // Données des slides pour le carrousel du projet
   const projectSlides = [
     {
-      image: "https://images.unsplash.com/photo-1516575150278-ffd4d4d3e0b9",
+      image: "https://images.unsplash.com/photo-1586773860383-dab5f3bc1bcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGhvc3BpdGFsfGVufDB8fDB8fHww",
       caption: "Façade principale de l’hôpital",
     },
     {
-      image: "https://images.unsplash.com/photo-1585435557343-3b0929fb0483",
+      image: "https://images.unsplash.com/photo-1565307528294-f70f3c7094e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGhvc3BpdGFsfGVufDB8fDB8fHww",
       caption: "Espaces intérieurs modernes",
     },
     {
@@ -94,7 +94,7 @@ const ProjectDetails = () => {
                 transition={{ duration: 10, repeat: Infinity, repeatType: 'reverse' }}
               ></motion.div>
               {/* Dégradé */}
-              <div className="absolute inset-0 bg-gradient-to-r from-SETM-950/85 to-SETM-800/85"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0055A4]/85 to-[#003F7D]/85"></div>
               <div className="container mx-auto px-4 h-full flex items-center relative z-10">
                 <motion.div
                   className="max-w-3xl"
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
                   transition={{ duration: 1, ease: 'easeOut' }}
                 >
                   <motion.span
-                    className="inline-block px-4 py-2 bg-SETM-500/30 text-SETM-100 rounded-full text-sm font-semibold mb-4"
+                    className="inline-block px-4 py-2 bg-[#F5A623]/30 text-[#E6F0FA] rounded-full text-sm font-semibold mb-4"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -119,7 +119,7 @@ const ProjectDetails = () => {
                     Hôpital de Saint-Pierre
                   </motion.h1>
                   <motion.p
-                    className="text-lg md:text-xl text-SETM-100 mb-6"
+                    className="text-lg md:text-xl text-[#E6F0FA] mb-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
@@ -134,7 +134,7 @@ const ProjectDetails = () => {
                     <Button
                       asChild
                       size="lg"
-                      className="bg-SETM-500 hover:bg-SETM-600 text-white rounded-full px-8 py-3 font-semibold transform transition-all hover:scale-105 shadow-lg"
+                      className="bg-[#F5A623] hover:bg-[#F5A623]/80 text-white rounded-full px-8 py-3 font-semibold transform transition-all hover:scale-105 shadow-lg"
                     >
                       <Link to="/contact">Nous contacter</Link>
                     </Button>
@@ -156,7 +156,7 @@ const ProjectDetails = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-SETM-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0055A4] mb-6 text-center">
               Présentation du projet
             </h2>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
@@ -164,23 +164,23 @@ const ProjectDetails = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <Building2 className="h-10 w-10 text-SETM-700 mx-auto mb-2" />
-                <p className="font-semibold text-SETM-900">300 lits</p>
+                <Building2 className="h-10 w-10 text-[#F5A623] mx-auto mb-2" />
+                <p className="font-semibold text-[#0055A4]">300 lits</p>
                 <p className="text-gray-600">Capacité hospitalière</p>
               </div>
               <div className="text-center">
-                <Calendar className="h-10 w-10 text-SETM-700 mx-auto mb-2" />
-                <p className="font-semibold text-SETM-900">2022-2026</p>
+                <Calendar className="h-10 w-10 text-[#F5A623] mx-auto mb-2" />
+                <p className="font-semibold text-[#0055A4]">2022-2026</p>
                 <p className="text-gray-600">Durée du projet</p>
               </div>
               <div className="text-center">
-                <MapPin className="h-10 w-10 text-SETM-700 mx-auto mb-2" />
-                <p className="font-semibold text-SETM-900">Saint-Pierre</p>
+                <MapPin className="h-10 w-10 text-[#F5A623] mx-auto mb-2" />
+                <p className="font-semibold text-[#0055A4]">Saint-Pierre</p>
                 <p className="text-gray-600">Localisation</p>
               </div>
               <div className="text-center">
-                <Users className="h-10 w-10 text-SETM-700 mx-auto mb-2" />
-                <p className="font-semibold text-SETM-900">500+ emplois</p>
+                <Users className="h-10 w-10 text-[#F5A623] mx-auto mb-2" />
+                <p className="font-semibold text-[#0055A4]">500+ emplois</p>
                 <p className="text-gray-600">Impact local</p>
               </div>
             </div>
@@ -198,7 +198,7 @@ const ProjectDetails = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-SETM-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0055A4] mb-4">
               Points forts du projet
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -228,7 +228,7 @@ const ProjectDetails = () => {
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-xl font-semibold text-SETM-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-[#0055A4] mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
@@ -246,7 +246,7 @@ const ProjectDetails = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-SETM-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0055A4] mb-4">
               Galerie du projet
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -277,7 +277,7 @@ const ProjectDetails = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-SETM-800 text-white">
+      <section className="py-16 bg-[#0055A4] text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -294,7 +294,7 @@ const ProjectDetails = () => {
             <Button
               asChild
               size="lg"
-              className="bg-white text-SETM-800 hover:bg-gray-100 rounded-full px-8 py-3"
+              className="bg-[#F5A623] text-white hover:bg-[#F5A623]/80 rounded-full px-8 py-3"
             >
               <Link to="/contact">Demander un devis</Link>
             </Button>
@@ -307,7 +307,7 @@ const ProjectDetails = () => {
         <Button
           asChild
           variant="outline"
-          className="text-SETM-700 border-SETM-700 hover:bg-SETM-700/10 rounded-full"
+          className="text-[#0055A4] border-[#0055A4] hover:bg-[#0055A4]/10 rounded-full"
         >
           <Link to="/projets" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" /> Retour aux projets
