@@ -309,7 +309,7 @@ const ProjectDetails = () => {
           variant="outline"
           className="text-[#0055A4] border-[#0055A4] hover:bg-[#0055A4]/10 rounded-full"
         >
-          <Link to="/projets" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" /> Retour aux projets
           </Link>
         </Button>
