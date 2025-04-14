@@ -148,14 +148,14 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              {/* Search input (mobile) */}
+              {/* Search input (mobile)
               <div className="px-4">
                 <input
                   type="text"
                   placeholder="Rechercher..."
                   className="w-full px-4 py-2 rounded-full bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
                 />
-              </div>
+              </div> */}
               <Button
                 asChild
                 className="mt-4 mx-4 bg-gradient-to-r from-[#0055A4] to-[#003F7D] text-white rounded-full px-6 py-3 font-semibold hover:from-[#003F7D] hover:to-[#002F5D] transform transition-all hover:scale-105"
