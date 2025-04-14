@@ -5,8 +5,9 @@ import { motion } from 'framer-motion';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useEffect } from 'react'; // Importer useEffect
 
-// CSS personnalisé pour le carrousel
+// CSS personnalisé pour le carrousel (inchangé)
 const slickStyles = `
   .slick-prev, .slick-next {
     width: 50px;
@@ -18,7 +19,7 @@ const slickStyles = `
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
   .slick-prev:hover, .slick-next:hover {
-    background: #0055A4; // Utilisation du bleu principal au survol
+    background: #0055A4;
     transform: scale(1.1);
   }
   .slick-prev:before, .slick-next:before {
@@ -36,17 +37,17 @@ const slickStyles = `
   }
   .slick-dots li button:before {
     font-size: 14px;
-    color: #E6F0FA; // Utilisation du bleu clair pour les points inactifs
+    color: #E6F0FA;
     opacity: 0.6;
   }
   .slick-dots li.slick-active button:before {
-    color: #E6F0FA; // Utilisation du bleu clair pour les points actifs
+    color: #E6F0FA;
     opacity: 1;
   }
 `;
 
 const ProjectDetails = () => {
-  // Données des slides pour le carrousel du projet
+  // Données des slides (inchangé)
   const projectSlides = [
     {
       image: "https://images.unsplash.com/photo-1586773860383-dab5f3bc1bcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGhvc3BpdGFsfGVufDB8fDB8fHww",
@@ -62,7 +63,7 @@ const ProjectDetails = () => {
     },
   ];
 
-  // Paramètres du carrousel
+  // Paramètres du carrousel (inchangé)
   const settings = {
     dots: true,
     infinite: true,
@@ -77,6 +78,14 @@ const ProjectDetails = () => {
     cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
   };
 
+  // Faire défiler jusqu'à la section "overview" au chargement
+  useEffect(() => {
+    const overviewSection = document.getElementById('project-overview');
+    if (overviewSection) {
+      overviewSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []); // Le tableau vide [] garantit que cela s'exécute une seule fois au chargement
+
   return (
     <main>
       {/* Hero Section - Carrousel du projet */}
@@ -85,7 +94,6 @@ const ProjectDetails = () => {
         <Slider {...settings} className="h-full">
           {projectSlides.map((slide, index) => (
             <div key={index} className="relative h-[70vh] min-h-[500px]">
-              {/* Image de fond */}
               <motion.div
                 className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay"
                 style={{ backgroundImage: `url(${slide.image})` }}
@@ -93,7 +101,6 @@ const ProjectDetails = () => {
                 animate={{ scale: 1 }}
                 transition={{ duration: 10, repeat: Infinity, repeatType: 'reverse' }}
               ></motion.div>
-              {/* Dégradé */}
               <div className="absolute inset-0 bg-gradient-to-r from-[#0055A4]/85 to-[#003F7D]/85"></div>
               <div className="container mx-auto px-4 h-full flex items-center relative z-10">
                 <motion.div
@@ -147,7 +154,7 @@ const ProjectDetails = () => {
       </section>
 
       {/* Project Overview */}
-      <section className="py-16 bg-white">
+      <section id="project-overview" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             className="max-w-4xl mx-auto"
