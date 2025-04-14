@@ -5,32 +5,32 @@ const partners = [
   {
     id: 1,
     name: "Région Réunion",
-    logo: "https://images.unsplash.com/photo-1490971774356-7fac993cc438",
+    logo: "/images/logo.png",
   },
   {
     id: 2,
     name: "Département de La Réunion",
-    logo: "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+    logo: "/images/logo.png",
   },
   {
     id: 3,
     name: "Université de La Réunion",
-    logo: "https://images.unsplash.com/photo-1592303645152-f2786aeb903d",
+    logo: "/images/logo.png",
   },
   {
     id: 4,
     name: "CHU de La Réunion",
-    logo: "https://images.unsplash.com/photo-1587351021759-3e566b3db679",
+    logo: "/images/logo.png",
   },
   {
     id: 5,
     name: "CIREST",
-    logo: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+    logo: "/images/logo.png",
   },
   {
     id: 6,
     name: "CINOR",
-    logo: "https://images.unsplash.com/photo-1558403194-611308249627",
+    logo: "/images/logo.png",
   },
 ];
 

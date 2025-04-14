@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.05)] transition-all duration-300">
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+        {/* Logo - Inchangé */}
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2 group" onClick={closeMenu}>
             <motion.img
@@ -54,14 +54,14 @@ const Header = () => {
               to={item.path}
               className={`relative text-sm font-medium uppercase tracking-wide transition-colors duration-200 ${
                 location.pathname === item.path
-                  ? 'text-SETM-800 font-bold'
-                  : 'text-muted-foreground hover:text-SETM-700'
+                  ? 'text-[#0055A4] font-bold'
+                  : 'text-muted-foreground hover:text-[#003F7D]'
               }`}
             >
               {item.name}
               {location.pathname === item.path && (
                 <motion.span
-                  className="absolute -bottom-2 left-0 h-1 w-full bg-gradient-to-r from-SETM-800 to-SETM-600 rounded-full"
+                  className="absolute -bottom-2 left-0 h-1 w-full bg-[#F5A623] rounded-full" // Changement de couleur en orange
                   layoutId="underline"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -77,7 +77,7 @@ const Header = () => {
           {/* Search button */}
           {/* <button
             onClick={toggleSearch}
-            className="p-2 rounded-full hover:bg-muted focus:outline-none focus:ring-2 focus:ring-SETM-800"
+            className="p-2 rounded-full hover:bg-muted focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
             aria-label={isSearchOpen ? 'Fermer la recherche' : 'Ouvrir la recherche'}
           >
             <Search className="h-5 w-5 text-muted-foreground" />
@@ -86,7 +86,7 @@ const Header = () => {
           {/* Contact button */}
           <Button
             asChild
-            className="bg-gradient-to-r from-SETM-800 to-SETM-600 text-white rounded-full px-6 py-2 font-semibold hover:from-SETM-700 hover:to-SETM-500 transform transition-all hover:scale-105 shadow-lg"
+            className="bg-gradient-to-r from-[#0055A4] to-[#003F7D] text-white rounded-full px-6 py-2 font-semibold hover:from-[#003F7D] hover:to-[#002F5D] transform transition-all hover:scale-105 shadow-lg"
           >
             <Link to="/contact">Nous contacter</Link>
           </Button>
@@ -95,7 +95,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden p-2 rounded-full hover:bg-muted focus:outline-none focus:ring-2 focus:ring-SETM-800"
+          className="md:hidden p-2 rounded-full hover:bg-muted focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
           aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
         >
           {isMenuOpen ? <X className="h-6 w-6 text-muted-foreground" /> : <Menu className="h-6 w-6 text-muted-foreground" />}
@@ -116,7 +116,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Rechercher..."
-                className="w-full px-4 py-2 rounded-full bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-SETM-800"
+                className="w-full px-4 py-2 rounded-full bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
               />
             </div>
           </motion.div>
@@ -141,7 +141,7 @@ const Header = () => {
                   onClick={closeMenu}
                   className={`px-4 py-3 text-base font-medium rounded-xl transition-colors hover:bg-muted ${
                     location.pathname === item.path
-                      ? 'bg-gradient-to-r from-SETM-800/10 to-SETM-600/10 text-SETM-800 font-bold'
+                      ? 'bg-gradient-to-r from-[#0055A4]/10 to-[#003F7D]/10 text-[#0055A4] font-bold'
                       : 'text-foreground'
                   }`}
                 >
@@ -153,12 +153,12 @@ const Header = () => {
                 <input
                   type="text"
                   placeholder="Rechercher..."
-                  className="w-full px-4 py-2 rounded-full bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-SETM-800"
+                  className="w-full px-4 py-2 rounded-full bg-muted text-foreground focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
                 />
               </div>
               <Button
                 asChild
-                className="mt-4 mx-4 bg-gradient-to-r from-SETM-800 to-SETM-600 text-white rounded-full px-6 py-3 font-semibold hover:from-SETM-700 hover:to-SETM-500 transform transition-all hover:scale-105"
+                className="mt-4 mx-4 bg-gradient-to-r from-[#0055A4] to-[#003F7D] text-white rounded-full px-6 py-3 font-semibold hover:from-[#003F7D] hover:to-[#002F5D] transform transition-all hover:scale-105"
               >
                 <Link to="/contact" onClick={closeMenu}>
                   Nous contacter
