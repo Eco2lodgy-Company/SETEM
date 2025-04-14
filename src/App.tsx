@@ -8,6 +8,8 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import ProjectDetails from "./pages/project";
+
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -28,6 +30,7 @@ const App = () => (
               <Route path="/a-propos" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/projet" element={<ProjectDetails />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>

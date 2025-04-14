@@ -36,25 +36,13 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2 group" onClick={closeMenu}>
-            <motion.svg
-              className="h-9 w-9 text-SETM-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              whileHover={{ rotate: 360, scale: 1.1 }}
-              transition={{ duration: 0.4 }}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 3v18m9-9H3m6-6l6 6m0 0l-6 6"
-              />
-            </motion.svg>
-            <span className="text-2xl font-extrabold text-SETM-800 tracking-tight group-hover:text-SETM-700 transition-colors">
-              SETM
-            </span>
+            <motion.img
+              src="/images/logo.png"
+              alt="SETM Logo"
+              className="h-24 w-auto max-h-18 object-contain sm:h-18 sm:max-h-18"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
           </Link>
         </div>
 
