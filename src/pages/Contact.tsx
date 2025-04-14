@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -32,7 +31,7 @@ const Contact = () => {
     setTimeout(() => {
       toast.success('Votre message a été envoyé avec succès!', {
         description: 'Nous vous répondrons dans les plus brefs délais.',
-        icon: <CheckCircle className="h-5 w-5" />,
+        icon: <CheckCircle className="h-5 w-5 text-[#0055A4]" />, // Icône de succès en bleu principal
       });
       setFormData({
         name: '',
@@ -47,7 +46,7 @@ const Contact = () => {
 
   return (
     <main>
-      {/* Page Header */}
+      {/* Page Header - Inchangé */}
       <section className="page-header">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contactez-nous</h1>
@@ -63,7 +62,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-SETM-900 mb-6">Nos coordonnées</h2>
+              <h2 className="text-3xl font-bold text-[#0055A4] mb-6">Nos coordonnées</h2>
               <p className="text-gray-700 mb-8">
                 N'hésitez pas à nous contacter par téléphone, email ou en nous rendant visite à notre siège social.
                 Notre équipe sera ravie de vous accueillir et de discuter de vos projets.
@@ -71,7 +70,7 @@ const Contact = () => {
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-SETM-700 mr-4 flex-shrink-0 mt-1" />
+                  <MapPin className="h-6 w-6 text-[#F5A623] mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Adresse</h3>
                     <p className="text-gray-700">
@@ -82,7 +81,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-SETM-700 mr-4 flex-shrink-0 mt-1" />
+                  <Phone className="h-6 w-6 text-[#F5A623] mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
                     <p className="text-gray-700">00 00 00 00</p>
@@ -90,10 +89,10 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <Mail className="h-6 w-6 text-SETM-700 mr-4 flex-shrink-0 mt-1" />
+                  <Mail className="h-6 w-6 text-[#F5A623] mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <a href="mailto:SETM@wanadoo.fr" className="text-SETM-700 hover:text-SETM-800 transition-colors">
+                    <a href="mailto:SETM@wanadoo.fr" className="text-[#0055A4] hover:text-[#003F7D] transition-colors">
                       SETM@wanadoo.fr
                     </a>
                   </div>
@@ -115,7 +114,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-SETM-900 mb-6">Envoyez-nous un message</h2>
+              <h2 className="text-3xl font-bold text-[#0055A4] mb-6">Envoyez-nous un message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -191,7 +190,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-2 text-sm text-gray-600">
-                  <AlertCircle className="h-5 w-5 text-SETM-700 flex-shrink-0 mt-0.5" />
+                  <AlertCircle className="h-5 w-5 text-[#F5A623] flex-shrink-0 mt-0.5" />
                   <p>
                     En soumettant ce formulaire, vous acceptez que les informations saisies soient utilisées
                     pour vous recontacter dans le cadre de votre demande.
@@ -200,7 +199,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-SETM-800 hover:bg-SETM-700"
+                  className="w-full bg-[#0055A4] hover:bg-[#003F7D] text-white"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
