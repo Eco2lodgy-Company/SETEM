@@ -14,7 +14,7 @@ const About = () => {
           </p>
         </div>
       </section>
-
+  
       {/* Company Info */}
       <section className="section-padding">
         <div className="container mx-auto">
